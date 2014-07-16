@@ -1,0 +1,31 @@
+@mixin header-font-stack {
+	font-family: 'Oswald', Verdana, sans-serif;
+}
+
+@mixin body-font-stack {
+	font-family: 'Vollkorn', Trebuchet, sans-serif;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@include header-font-stack;
+	font-weight: 400;
+}
+
+p {
+	font-size: 1.2em;
+	@include body-font-stack;
+	text-indent: 1.5em;
+}
+
+blockquote {
+	@include header-font-stack;
+	font-weight: 300;
+	font-size: 1.5em;
+}
